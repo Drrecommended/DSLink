@@ -7,6 +7,7 @@
     <title>Dream Sequence</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="/assets/favicon.ico" />
+    <script src="/index.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -16,7 +17,8 @@
           src="/assets/Untitled-3.png"
           alt="Dream Sequence banner logo"
         />
-        <ul class="socials">
+        <ul class="links">
+          <li><button data-modal-target="#modal" class="sign-up__button">Sign up</button></li>
           <li>
             <a href="https://www.facebook.com/dancinginyourdreams"
               ><img class="icon" src="./assets/facebookico.ico" alt=""
@@ -36,5 +38,18 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">example</div>
+        <button data-close-button class="close-button">X</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        voluptates assumenda libero tenetur provident, non ea mollitia illum
+        tempore quae, repellendus quos. Inventore beatae repellat neque quod,
+        tempore amet suscipit?
+      </div>
+    </div>
+    <div id="overlay"></div>
   </body>
 </html>

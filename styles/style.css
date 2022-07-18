@@ -21,6 +21,13 @@ body:before {
   background-size: cover;
 }
 
+button {
+  cursor: pointer;
+  background-color: yellow;
+  border: 2px solid black;
+  height: 30px;
+}
+
 li {
   list-style: none;
 }
@@ -46,13 +53,14 @@ li .icon {
   margin-bottom: 5px;
 }
 
-.header .socials {
+.header .links {
   margin: 0;
   justify-content: right;
+  align-items: center;
   display: flex;
 }
 
-.header .socials li {
+.header .links li {
   margin-left: 18px;
 }
 
@@ -72,6 +80,56 @@ li .icon {
   padding-left: 100%;
   display: inline-block;
   animation: animate 20s linear infinite;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 2px solid black;
+  background-color: white;
+  z-index: 10;
+  width: 300px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modal-body {
+  padding: 10px 15px;
+}
+
+.modal .modal-header {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal .modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 @keyframes animate {
