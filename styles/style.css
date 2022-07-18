@@ -22,6 +22,21 @@ body:before {
   background-size: cover;
 }
 
+body {
+  height: 3000px;
+}
+
+.logo-wrapper {
+  bottom: -5%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+
+.logo-wrapper #reload {
+  width: 100px;
+}
+
 button {
   cursor: pointer;
   background-color: yellow;
@@ -32,10 +47,6 @@ button {
 
 li {
   list-style: none;
-}
-
-li .icon {
-  max-width: 42px;
 }
 
 .container {
@@ -63,7 +74,11 @@ li .icon {
 }
 
 .header .links li {
-  margin-left: 18px;
+  margin-left: 20px;
+}
+
+.header .links li .icon {
+  max-width: 42px;
 }
 
 .marquee {

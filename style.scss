@@ -22,6 +22,27 @@ body {
   }
 }
 
+body {
+  height: 3000px;
+}
+
+.logo-wrapper {
+  bottom: -5%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  #reload {
+    width: 100px;
+  }
+}
+
+// .logo {
+//   position: fixed;
+//   bottom: 10px;
+//   left: 10px;
+//   width: 80px;
+// }
+
 button {
   cursor: pointer;
   background-color: yellow;
@@ -32,9 +53,6 @@ button {
 
 li {
   list-style: none;
-  .icon {
-    max-width: 42px;
-  }
 }
 
 .container {
@@ -57,7 +75,10 @@ li {
     align-items: center;
     display: flex;
     li {
-      margin-left: 18px;
+      margin-left: 20px;
+      .icon {
+        max-width: 42px;
+      }
     }
   }
 }

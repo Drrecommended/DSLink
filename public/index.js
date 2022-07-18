@@ -36,3 +36,13 @@ closeModalButtons.forEach((button) => {
     closeModal(modal)
   })
 })
+
+
+window.onscroll = () => {
+  scrollRotate();
+};
+
+const scrollRotate = () => {
+  let image = document.getElementById("reload");
+  image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+}
