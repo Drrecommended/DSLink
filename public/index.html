@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Sequence</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="/assets/favicon.ico" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          class="banner"
+          src="/assets/Untitled-3.png"
+          alt="Dream Sequence banner logo"
+        />
+        <ul class="links">
+          <li>
+            <button data-modal-target="#modal" class="sign-up__button">
+              Sign up
+            </button>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/dancinginyourdreams"
+              ><img class="icon" src="../assets/facebookico.ico" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_dream.sequence/"
+              ><img class="icon" src="../assets/instaico.ico" alt=""
+            /></a>
+          </li>
+        </ul>
+      </header>
+      <div class="marquee">
+        <div>
+          Welcome to our webpage. Sign up for email alerts and keep in touch
+          with us on our socials.
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">example</div>
+        <button data-close-button class="close-button">X</button>
+      </div>
+      <div class="modal-body">
+        <form class="sign-up__form" action="/signup" method="POST">
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              name="firstName"
+              id="first-name"
+              class="form-control"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              name="lastName"
+              id="last-name"
+              class="form-control"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number:</label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phone-number"
+              class="form-control"
+              placeholder="Phone Number"
+            />
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
