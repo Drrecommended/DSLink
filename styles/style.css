@@ -9,7 +9,6 @@ body {
 html:before,
 body:before {
   content: '';
-  content: '';
   width: 100%;
   height: 100vh;
   background-image: url(https://images.unsplash.com/photo-1548266652-99cf27701ced?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdWRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
@@ -23,26 +22,59 @@ body:before {
 }
 
 body {
-  height: 3000px;
+  font-family: kallisto, sans-serif;
+  padding: 0;
+}
+
+body h1 {
+  color: white;
+  font-size: 1.36rem;
+  white-space: nowrap;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  -webkit-text-stroke: 2px black;
+  text-shadow: 0 0 0 #f00, 0 0 1px transparent;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.artist-link {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  width: 275px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5vh;
+  font-weight: 600;
+  color: black;
+  border: 2px solid black;
+  letter-spacing: 2px;
 }
 
 .logo-wrapper {
-  bottom: -5%;
-  left: 16%;
-  transform: translate(-50%, -50%);
-  position: fixed;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .logo-wrapper #reload {
-  width: 100px;
+  width: 80px;
 }
 
 button {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #fdde14;
   border: 2px solid black;
   height: 42px;
   min-width: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 li {
@@ -50,13 +82,13 @@ li {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
+  width: 100vw;
   margin: 0 auto;
 }
 
 .header {
   background-color: white;
-  margin: 0 auto;
   padding: 0.5em;
   border: 2px solid black;
 }
@@ -85,15 +117,17 @@ li {
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
-  background-color: yellow;
+  background-color: #fdde14;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
+  font-family: kallisto, sans-serif;
+  margin-bottom: 10px;
 }
 
 .marquee div {
+  font-weight: 600;
   font-size: 2rem;
-  font-family: verdana;
   padding-left: 100%;
   display: inline-block;
   animation: animate 20s linear infinite;
@@ -114,7 +148,7 @@ li {
   border: 2px solid black;
   background-color: white;
   z-index: 10;
-  width: 300px;
+  min-width: 315px;
 }
 
 .modal.active {
@@ -161,6 +195,28 @@ li {
 
 .modal label {
   display: block;
+}
+
+footer {
+  bottom: 0;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background-color: white;
+}
+
+footer .footer-border {
+  height: 10px;
+  background-color: #fdde14;
+  border-bottom: 2px solid black;
+}
+
+footer p {
+  margin: 0.5rem;
 }
 
 #overlay {

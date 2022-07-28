@@ -1,3 +1,6 @@
+$header: 1.36rem;
+$mainYellow: rgb(253, 222, 20);
+
 html,
 body {
   padding: 0;
@@ -5,7 +8,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   &:before {
-    content: '';
     content: '';
     width: 100%;
     height: 100vh;
@@ -23,16 +25,46 @@ body {
 }
 
 body {
-  height: 3000px;
+  font-family: kallisto, sans-serif;
+  padding: 0;
+  h1 {
+    color: white;
+    font-size: $header;
+    white-space: nowrap;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 0 0 0 #f00, 0 0 1px transparent;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.artist-link {
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  width: 275px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: min(5vh, 10vh);
+  font-weight: 600;
+  color: black;
+  border: 2px solid black;
+  letter-spacing: 2px;
 }
 
 .logo-wrapper {
-  bottom: -5%;
-  left: 16%;
-  transform: translate(-50%, -50%);
-  position: fixed;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   #reload {
-    width: 100px;
+    width: 80px;
   }
 }
 
@@ -45,10 +77,12 @@ body {
 
 button {
   cursor: pointer;
-  background-color: yellow;
+  background-color: $mainYellow;
   border: 2px solid black;
   height: 42px;
   min-width: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 li {
@@ -56,15 +90,16 @@ li {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
+  width: 100vw;
   margin: 0 auto;
 }
 
 .header {
   background-color: white;
-  margin: 0 auto;
   padding: 0.5em;
   border: 2px solid black;
+  
   .banner {
     width: 100%;
     margin-bottom: 5px;
@@ -89,15 +124,17 @@ li {
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
-  background-color: yellow;
+  background-color: $mainYellow;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
+  font-family: kallisto, sans-serif;
+  margin-bottom: 10px;
 }
 
 .marquee div {
+  font-weight: 600;
   font-size: 2rem;
-  font-family: verdana;
   padding-left: 100%;
   display: inline-block;
   animation: animate 20s linear infinite;
@@ -119,7 +156,7 @@ li {
   border: 2px solid black;
   background-color: white;
   z-index: 10;
-  width: 300px;
+  min-width: 315px;
   &.active {
     transform: translate(-50%, -50%) scale(1);
   }
@@ -158,6 +195,27 @@ li {
   label {
     display: block;
   }
+}
+
+footer {
+  .footer-border {
+    height: 10px;
+    background-color: $mainYellow;
+    border-bottom: 2px solid black;
+
+  }
+  p {
+    margin: 0.5rem;
+  }
+  bottom: 0;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  background-color: white;
 }
 
 #overlay {
