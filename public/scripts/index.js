@@ -1,8 +1,12 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
+const submit = document.getElementById('submit')
 
-
+submit.addEventListener('click', (e) => {
+  e.preventDefault()
+  
+})
 
 const openModal = (modal) => {
   if (modal == null) return
@@ -17,10 +21,10 @@ const closeModal = (modal) => {
 }
 
 overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-        closeModal(modal)
-    })
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach((modal) => {
+    closeModal(modal)
+  })
 })
 
 openModalButtons.forEach((button) => {
@@ -36,7 +40,6 @@ closeModalButtons.forEach((button) => {
     closeModal(modal)
   })
 })
-
 
 // window.onscroll = () => {
 //   scrollRotate();

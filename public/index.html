@@ -8,30 +8,26 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="https://use.typekit.net/zui3cgp.css" />
-    <script src="index.js" defer></script>
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <img
           class="banner"
-          src="/assets/Untitled-3.png"
+          src="assets/Untitled-3.png"
           alt="Dream Sequence banner logo"
         />
-        <ul class="links">
-          <li>
-            <button data-modal-target="#modal" class="sign-up__button">
-              Sign up
-            </button>
-          </li>
+        <p>Dancing in your dreams...</p>
+        <ul class="social-links">
           <li>
             <a href="https://www.facebook.com/dancinginyourdreams"
-              ><img class="icon" src="../assets/facebookico.ico" alt=""
+              ><img class="icon" src="assets/facebookico.ico" alt=""
             /></a>
           </li>
           <li>
             <a href="https://www.instagram.com/_dream.sequence/"
-              ><img class="icon" src="../assets/instaico.ico" alt=""
+              ><img class="icon" src="assets/instaico.ico" alt=""
             /></a>
           </li>
         </ul>
@@ -53,7 +49,7 @@
         >Justin Collins</a
       >
       <div class="logo-wrapper">
-        <img id="reload" src="../assets/logo.png" alt="" />
+        <img id="reload" src="assets/logo.png" alt="" />
       </div>
 
       <footer>
@@ -61,56 +57,5 @@
         <p>Full site coming soon...</p>
       </footer>
     </div>
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="title">Mailing List</div>
-        <button data-close-button class="close-button">X</button>
-      </div>
-      <div class="modal-body">
-        <form class="sign-up__form" action="/signup" method="POST">
-          <div class="form-group">
-            <label for="first-name">First Name:</label>
-            <input
-              type="text"
-              name="firstName"
-              id="first-name"
-              class="form-control"
-            />
-          </div>
-          <div class="form-group">
-            <label for="last-name">Last Name:</label>
-            <input
-              type="text"
-              name="lastName"
-              id="last-name"
-              class="form-control"
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="phone-number">Phone Number(optional):</label>
-            <input
-              type="tel"
-              name="phoneNumber"
-              id="phone-number"
-              class="form-control"
-              placeholder="For private events/renegades"
-            />
-          </div>
-          <button type="submit">submit</button>
-        </form>
-      </div>
-    </div>
-
-    <div id="overlay"></div>
   </body>
 </html>

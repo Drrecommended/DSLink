@@ -1,4 +1,4 @@
-$header: 1.36rem;
+$header: 1.2rem;
 $mainYellow: rgb(253, 222, 20);
 
 html,
@@ -32,11 +32,10 @@ body {
     font-size: $header;
     white-space: nowrap;
     font-weight: 900;
-    font-style: normal;
+    text-transform: uppercase;
     text-align: center;
     -webkit-text-stroke: 2px black;
     text-shadow: 0 0 0 #f00, 0 0 1px transparent;
-    letter-spacing: 2px;
     margin-bottom: 20px;
   }
 }
@@ -89,30 +88,30 @@ li {
   list-style: none;
 }
 
-.container {
-  max-width: 800px;
-  width: 100vw;
-  margin: 0 auto;
-}
-
 .header {
   background-color: white;
   padding: 0.5em;
   border: 2px solid black;
-  
+
   .banner {
     width: 100%;
     margin-bottom: 5px;
+  } 
+  p {
+    display: inline;
   }
-  .links {
+  .social-links {
     margin: 0;
     justify-content: right;
     align-items: center;
     display: flex;
     li {
-      margin-left: 20px;
       .icon {
         max-width: 42px;
+        margin-left: 10px;
+      }
+      p {
+        white-space: nowrap;
       }
     }
   }
@@ -197,12 +196,16 @@ li {
   }
 }
 
+.container {
+  max-width: 800px;
+  width: 100vw;
+  margin: 0 auto;
+}
 footer {
   .footer-border {
     height: 10px;
     background-color: $mainYellow;
     border-bottom: 2px solid black;
-
   }
   p {
     margin: 0.5rem;
